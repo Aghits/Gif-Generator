@@ -2,7 +2,7 @@ function getGiphydata() {
 
     var query = document.querySelector('#search').value
 
-    var url = "http://api.giphy.com/v1/gifs/search?&api_key=FxnRpt0JiTX9a5NlgogWUxlgQ7zfjs14&q="+query;
+    var url = "https://api.giphy.com/v1/gifs/search?&api_key=FxnRpt0JiTX9a5NlgogWUxlgQ7zfjs14&q="+query;
 
     fetch(url)
     .then( data => data.json() )
